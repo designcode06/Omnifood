@@ -609,15 +609,26 @@
 }
 
 .social-icon {
+  color: #767676;
   height: 2.4rem;
   width: 2.4rem;
 }
 
+.copyright,
+.copyright-notes {
+  margin-top: auto;
+}
+
 .copyright {
+  color: #767676;
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #767676;
-  margin-top: auto;
+}
+
+.copyright-notes {
+  color: #888;
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
 .footer-heading {
