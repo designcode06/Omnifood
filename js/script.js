@@ -83,6 +83,15 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
+// Notification
+
+const notificationBtn = document.querySelector(".notification-btn");
+const notificationEl = document.querySelector(".notification");
+notificationBtn.addEventListener("click", function () {
+  notificationEl.classList.toggle("notification-close");
+});
+
+///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
