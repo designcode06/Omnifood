@@ -672,34 +672,20 @@
 /* NOTIFICATION */
 /* ************************ */
 
+/* ************************ */
+/* NOTIFICATION 2.0 */
+/* ************************ */
+
 .notification {
-  width: 45rem;
-  height: auto;
-  position: fixed;
+  width: 100%;
   color: #333;
-  font-size: 1.6rem;
-  font-weight: 400;
   background-color: #ddd;
-  text-align: center;
-  padding: 1.2rem 2.4rem;
-  z-index: 2000;
-  bottom: 2rem;
-  right: 2rem;
-  border-radius: 9px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  transform: translateX(0);
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-  transition: all 0.5s ease-in;
 }
 
 .notification-close {
-  transform: translateX(100%);
+  display: none;
+
+  transform: translateY(-100%);
 
   /* 1 - Hide it visually */
   opacity: 0;
@@ -711,9 +697,27 @@
   visibility: hidden;
 }
 
+.notification-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem 4.8rem;
+  margin: 0 auto;
+}
+
+.notification-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  flex-grow: 1;
+  text-align: center;
+}
+
 .notification-btn {
   background: none;
   border: none;
+  cursor: pointer;
+  /* position: absolute;
+  right: 3.2rem; */
 }
 
 .notification-icon {
